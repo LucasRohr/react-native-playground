@@ -3,12 +3,13 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { HomePage } from '../features';
 
 import type { RootStackParamList } from './types';
+import { screenOptions } from './options';
 
 const Drawer = createDrawerNavigator<RootStackParamList>();
 
 const Routes = () => {
   return (
-    <Drawer.Navigator>
+    <Drawer.Navigator screenOptions={screenOptions}>
       <Drawer.Screen name="Home">{_ => <HomePage />}</Drawer.Screen>
       {/*
                 <Drawer.Screen name="Login">{(props) => <Login {...props} />}</Drawer.Screen>

@@ -4,6 +4,7 @@ export const COLORS = {
   error: '#F44336',
   success: '#62e034',
   background: '#FFFFFF',
+  backgroundSecondary: '#adccad',
   text: '#333333',
   gray: '#9E9E9E',
 };
