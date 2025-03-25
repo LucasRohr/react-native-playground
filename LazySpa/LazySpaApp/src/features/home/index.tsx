@@ -4,7 +4,7 @@ import { Image, Text, View } from 'react-native';
 import { useUserStore } from '../../store';
 
 import { styles } from './styles';
-import { TEXTS } from './texts';
+import { STRINGS } from './strings';
 import { LOGO } from '../../assets';
 
 const HomePage = () => {
@@ -13,8 +13,8 @@ const HomePage = () => {
   const renderContent = useCallback(() => {
     if (!user) {
       <View style={styles.container}>
-        <Text style={styles.description}>{TEXTS.WELCOME_MESSAGE}</Text>
-        <Text style={styles.description}>{TEXTS.DESCRIPTION}</Text>
+        <Text style={styles.description}>{STRINGS.WELCOME_MESSAGE}</Text>
+        <Text style={styles.description}>{STRINGS.DESCRIPTION}</Text>
       </View>;
     }
 
@@ -22,7 +22,7 @@ const HomePage = () => {
       <View style={styles.container}>
         <Image source={LOGO} style={styles.logo} />
         <Text style={[styles.description, styles.paddingDescription]}>
-          {TEXTS.NO_LOGGED_USER}
+          {STRINGS.NO_LOGGED_USER}
         </Text>
       </View>
     );

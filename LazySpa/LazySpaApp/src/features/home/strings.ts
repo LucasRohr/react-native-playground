@@ -1,4 +1,4 @@
-export const TEXTS = Object.freeze({
+export const STRINGS = Object.freeze({
   NO_LOGGED_USER: 'Please, login to use our services!',
   WELCOME_MESSAGE: "Hi {user}! Let's relax today?",
   DESCRIPTION:
