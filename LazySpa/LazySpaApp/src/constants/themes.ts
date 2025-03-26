@@ -6,6 +6,8 @@ export const COLORS = {
   background: '#FFFFFF',
   backgroundSecondary: '#adccad',
   text: '#333333',
+  textButtonPrimary: '#FFFFFF',
+  textButtonSecondary: '#333333',
   gray: '#9E9E9E',
 };
 
@@ -19,4 +21,9 @@ export const FONT_SIZES = {
   normal: 14,
   big: 18,
   extraBig: 20,
+};
+
+export const PADDINGS = {
+  pageHorizontal: 24,
+  regularButton: 16,
 };
