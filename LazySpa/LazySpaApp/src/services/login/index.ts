@@ -1,8 +1,9 @@
-import { UserApiInterface } from '../../interfaces';
+import { userInterfaceFactory } from '../../factories';
+import { UserApiInterface, UserInterface } from '../../interfaces';
 import { axiosInstance } from '../axios';
 import type { LoginDataParams } from './types';
 
-export const loginUser = async (loginData: LoginDataParams): Promise<UserApiInterface> => {
+export const loginUser = async (loginData: LoginDataParams): Promise<UserInterface> => {
   try {
     const jsonData = JSON.stringify(loginData);
 
@@ -11,7 +12,9 @@ export const loginUser = async (loginData: LoginDataParams): Promise<UserApiInte
       jsonData,
     );
 
-    return response;
+    const parsedResponse = userInterfaceFactory(response);
+
+    return parsedResponse;
   } catch (error) {
     throw error;
   }
