@@ -8,5 +8,7 @@ export type UseLoginHookType = {
   updateEmail: (email: string) => void;
   password: string;
   updatePassword: (password: string) => void;
+  isErrorSnackbarVisible: boolean;
+  updateIsErrorSnackbarVisible: (isVisible: boolean) => void;
   loginMutation: UseMutationResult<UserInterface, Error, LoginDataParams, unknown>;
 };

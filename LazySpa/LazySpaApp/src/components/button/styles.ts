@@ -4,12 +4,15 @@ import { COLORS, FONT_SIZES, PADDINGS } from '../../constants';
 const baseStyles = StyleSheet.create({
   container: {
     width: '100%',
+    justifyContent: 'center',
+    alignItems: 'center',
     paddingVertical: PADDINGS.regularButton,
-    borderWidth: 2,
+    borderWidth: 1,
     borderRadius: 4,
+    borderColor: COLORS.primary,
   },
   title: {
-    fontSize: FONT_SIZES.normal,
+    fontSize: FONT_SIZES.big,
     fontWeight: '500',
   },
 });

@@ -11,6 +11,7 @@ const LSInput = ({
   onChange,
   isEditable = true,
   isDisabled = false,
+  autoCapitalize = 'none',
   error,
 }: LSInputPropsType) => {
   const canEdit = useMemo(() => isEditable && !isDisabled, [isEditable, isDisabled]);
@@ -29,9 +30,10 @@ const LSInput = ({
       <TextInput
         value={value}
         editable={canEdit}
-        placeholder={placeholder}
-        onChangeText={onChange}
         style={styles.input}
+        placeholder={placeholder}
+        autoCapitalize={autoCapitalize}
+        onChangeText={onChange}
       />
       {renderError()}
     </View>

@@ -7,5 +7,6 @@ export type LSInputPropsType = {
   onChange: (text: string) => void;
   isEditable?: boolean;
   isDisabled?: boolean;
+  autoCapitalize?: 'none' | 'sentences' | 'words' | 'characters' | undefined;
   error?: string | undefined | null;
 };

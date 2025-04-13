@@ -11,7 +11,7 @@ const HomePage = () => {
   const user = useUserStore(state => state.user);
 
   const renderContent = useCallback(() => {
-    if (!user) {
+    if (user) {
       <View style={styles.container}>
         <Text style={styles.description}>{STRINGS.WELCOME_MESSAGE}</Text>
         <Text style={styles.description}>{STRINGS.DESCRIPTION}</Text>
