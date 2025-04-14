@@ -12,10 +12,15 @@ const HomePage = () => {
 
   const renderContent = useCallback(() => {
     if (user) {
-      <View style={styles.container}>
-        <Text style={styles.description}>{STRINGS.WELCOME_MESSAGE}</Text>
-        <Text style={styles.description}>{STRINGS.DESCRIPTION}</Text>
-      </View>;
+      return (
+        <View style={styles.container}>
+          <Image source={LOGO} style={styles.logo} />
+          <Text style={styles.description}>
+            {STRINGS.WELCOME_MESSAGE.replace('{user}', user.name)}
+          </Text>
+          <Text style={styles.description}>{STRINGS.DESCRIPTION}</Text>
+        </View>
+      );
     }
 
     return (

@@ -1,14 +1,18 @@
+import { useCallback } from 'react';
 import { Image, Text, View } from 'react-native';
+import { Snackbar } from 'react-native-paper';
+import { DrawerScreenProps } from '@react-navigation/drawer';
+
 import { useLogin } from './hooks';
 import { LOGO } from '../../assets';
+import { LSButton, LSInput, LSPasswordInput } from '../../components';
+
+import type { RootStackParamList } from '../../routes/types';
 
 import { styles } from './styles';
 import { STRINGS } from './strings';
-import { LSButton, LSInput, LSPasswordInput } from '../../components';
-import { useCallback } from 'react';
-import { Snackbar } from 'react-native-paper';
 
-const LoginPage = () => {
+const LoginPage = (navigation: DrawerScreenProps<RootStackParamList, 'Login'>) => {
   const {
     email,
     updateEmail,
@@ -17,7 +21,7 @@ const LoginPage = () => {
     isErrorSnackbarVisible,
     updateIsErrorSnackbarVisible,
     loginMutation,
-  } = useLogin();
+  } = useLogin(navigation);
 
   const { isPending, error } = loginMutation;
 
@@ -29,16 +33,18 @@ const LoginPage = () => {
   }, [loginMutation]);
 
   const renderErrorSnackbar = useCallback(() => {
+    const onDismiss = () => {
+      updateIsErrorSnackbarVisible(false);
+      loginMutation.reset();
+    };
+
     return (
       <Snackbar
         visible={isErrorSnackbarVisible}
-        onDismiss={() => updateIsErrorSnackbarVisible(false)}
+        onDismiss={onDismiss}
         action={{
           label: 'X',
-          onPress: () => {
-            updateIsErrorSnackbarVisible(false);
-            loginMutation.reset();
-          },
+          onPress: onDismiss,
         }}>
         {error?.message}
       </Snackbar>

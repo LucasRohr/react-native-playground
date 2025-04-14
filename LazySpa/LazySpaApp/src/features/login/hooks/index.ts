@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useMutation } from '@tanstack/react-query';
+import { DrawerScreenProps } from '@react-navigation/drawer';
 
 import { QUERY_KEYS } from '../../../constants';
 import { LoginDataParams } from '../../../services/login/types';
@@ -7,8 +8,11 @@ import { loginUser } from '../../../services';
 import { useUserStore } from '../../../store';
 
 import type { UseLoginHookType } from './types';
+import type { RootStackParamList } from '../../../routes/types';
 
-const useLogin = (): UseLoginHookType => {
+const useLogin = ({
+  navigation,
+}: DrawerScreenProps<RootStackParamList, 'Login'>): UseLoginHookType => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [isErrorSnackbarVisible, setIsErrorSnackbarVisible] = useState<boolean>(false);
@@ -20,7 +24,7 @@ const useLogin = (): UseLoginHookType => {
 
   const setLoggedUser = useUserStore(state => state.setLoggedUser);
 
-  const { data, isError } = loginMutation;
+  const { data, isSuccess, isError } = loginMutation;
 
   useEffect(() => {
     loginMutation.reset();
@@ -33,10 +37,11 @@ const useLogin = (): UseLoginHookType => {
   }, [isError]);
 
   useEffect(() => {
-    if (data) {
+    if (data && isSuccess) {
       setLoggedUser(data);
+      navigation.navigate('Home');
     }
-  }, [data]);
+  }, [data, isSuccess]);
 
   const updateEmail = (email: string) => {
     setEmail(email);
