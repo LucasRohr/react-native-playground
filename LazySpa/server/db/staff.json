@@ -46,5 +46,65 @@
       "platformName": "Unsplash",
       "platformLink": "https://unsplash.com/"
     }
+  },
+  {
+    "id": 5,
+    "name": "Sophia",
+    "treatmentNames": ["hot stone therapy", "aromatherapy", "body wrap"],
+    "image": {
+      "fileName": "sophia.jpg",
+      "authorName": "Andrea Piacquadio",
+      "authorLink": "https://www.pexels.com/@olly/",
+      "platformName": "Pexels",
+      "platformLink": "https://www.pexels.com/"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Liam",
+    "treatmentNames": ["manicure & pedicure", "hydrotherapy"],
+    "image": {
+      "fileName": "liam.jpg",
+      "authorName": "Nathan Dumlao",
+      "authorLink": "https://unsplash.com/@nate_dumlao",
+      "platformName": "Unsplash",
+      "platformLink": "https://unsplash.com/"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Emma",
+    "treatmentNames": ["thai massage", "reflexology"],
+    "image": {
+      "fileName": "emma.jpg",
+      "authorName": "Alexander Krivitskiy",
+      "authorLink": "https://unsplash.com/@krivitskiy",
+      "platformName": "Unsplash",
+      "platformLink": "https://unsplash.com/"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Noah",
+    "treatmentNames": ["seaweed wrap", "cryotherapy"],
+    "image": {
+      "fileName": "noah.jpg",
+      "authorName": "Pixabay",
+      "authorLink": "https://pixabay.com/users/pixabay-123456/",
+      "platformName": "Pixabay",
+      "platformLink": "https://pixabay.com/"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Olivia",
+    "treatmentNames": ["couples massage", "aromatherapy"],
+    "image": {
+      "fileName": "olivia.jpg",
+      "authorName": "Valeria Boltneva",
+      "authorLink": "https://www.pexels.com/@valeria-boltneva/",
+      "platformName": "Pexels",
+      "platformLink": "https://www.pexels.com/"
+    }
   }
 ]
