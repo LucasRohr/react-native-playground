@@ -15,7 +15,7 @@ export const treatmentItemInterfaceFactory = (
     id: id ?? 0,
     description: description ?? '',
     durationInMinutes: durationInMinutes ?? 0,
-    image: image?.authorLink ?? '',
+    image: image?.fileName ?? '',
     name: name ?? '',
   };
 };

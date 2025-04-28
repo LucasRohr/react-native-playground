@@ -4,7 +4,7 @@
     "name": "Massage",
     "durationInMinutes": 60,
     "image": {
-      "fileName": "massage.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Mariolh",
       "authorLink": "https://pixabay.com/users/mariolh-62451/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=567021",
       "platformName": "Pixabay",
@@ -17,7 +17,7 @@
     "name": "Facial",
     "durationInMinutes": 30,
     "image": {
-      "fileName": "facial.jpg",
+      "fileName": "https://images.squarespace-cdn.com/content/v1/5d5f2058a79cbf000111652a/1586842536251-IY8XEBZ4JINBCSKZKAHT/FaceMassage.jpg",
       "authorName": "engin akyurt",
       "authorLink": "https://unsplash.com/@enginakyurt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText",
       "platformName": "Unsplash",
@@ -30,7 +30,7 @@
     "name": "Scrub",
     "durationInMinutes": 15,
     "image": {
-      "fileName": "scrub.jpg",
+      "fileName": "https://essentialchiropractic.co.uk/wp-content/uploads/2024/07/relaxing_shoulder_massage.jpg",
       "authorName": "Monfocus",
       "authorLink": "https://pixabay.com/users/monfocus-2516394/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=5475880",
       "platformName": "Pixabay",
@@ -43,7 +43,7 @@
     "name": "Hot Stone Therapy",
     "durationInMinutes": 75,
     "image": {
-      "fileName": "hot_stone.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Rythik",
       "authorLink": "https://pixabay.com/users/rythik-12345678/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=123456",
       "platformName": "Pixabay",
@@ -56,7 +56,7 @@
     "name": "Aromatherapy",
     "durationInMinutes": 50,
     "image": {
-      "fileName": "aromatherapy.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Valeria Boltneva",
       "authorLink": "https://www.pexels.com/@valeria-boltneva/",
       "platformName": "Pexels",
@@ -69,7 +69,7 @@
     "name": "Body Wrap",
     "durationInMinutes": 90,
     "image": {
-      "fileName": "body_wrap.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Sharon McCutcheon",
       "authorLink": "https://unsplash.com/@sharonmccutcheon",
       "platformName": "Unsplash",
@@ -82,7 +82,7 @@
     "name": "Manicure & Pedicure",
     "durationInMinutes": 60,
     "image": {
-      "fileName": "manicure_pedicure.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Anete Lusina",
       "authorLink": "https://www.pexels.com/@anete-lusina/",
       "platformName": "Pexels",
@@ -95,7 +95,7 @@
     "name": "Hydrotherapy",
     "durationInMinutes": 45,
     "image": {
-      "fileName": "hydrotherapy.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Pixabay",
       "authorLink": "https://pixabay.com/users/pixabay-123456/",
       "platformName": "Pixabay",
@@ -108,7 +108,7 @@
     "name": "Thai Massage",
     "durationInMinutes": 90,
     "image": {
-      "fileName": "thai_massage.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "truthseeker08",
       "authorLink": "https://pixabay.com/users/truthseeker08-3098814/",
       "platformName": "Pixabay",
@@ -121,7 +121,7 @@
     "name": "Reflexology",
     "durationInMinutes": 60,
     "image": {
-      "fileName": "reflexology.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Scottsdale Foot Spa",
       "authorLink": "https://unsplash.com/@scottsdalefootspa",
       "platformName": "Unsplash",
@@ -134,7 +134,7 @@
     "name": "Seaweed Wrap",
     "durationInMinutes": 75,
     "image": {
-      "fileName": "seaweed_wrap.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Valeria Boltneva",
       "authorLink": "https://www.pexels.com/@valeria-boltneva/",
       "platformName": "Pexels",
@@ -147,7 +147,7 @@
     "name": "Couples Massage",
     "durationInMinutes": 60,
     "image": {
-      "fileName": "couples_massage.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Toa Heftiba",
       "authorLink": "https://unsplash.com/@heftiba",
       "platformName": "Unsplash",
@@ -160,7 +160,7 @@
     "name": "Cryotherapy",
     "durationInMinutes": 30,
     "image": {
-      "fileName": "cryotherapy.jpg",
+      "fileName": "https://goodspaguide--live.s3.amazonaws.com/balienese_2023-12-11-163035_hlxe.jpg",
       "authorName": "Pixabay",
       "authorLink": "https://pixabay.com/users/pixabay-123456/",
       "platformName": "Pixabay",

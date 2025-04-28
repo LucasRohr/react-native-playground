@@ -1,4 +1,4 @@
-type TreatmentItemImageApiInterface = {
+export type TreatmentItemImageApiInterface = {
   fileName?: string;
   authorName?: string;
   authorLink?: string;
@@ -6,7 +6,7 @@ type TreatmentItemImageApiInterface = {
   platformLink?: string;
 };
 
-type TreatmentItemApiInterface = {
+export type TreatmentItemApiInterface = {
   id?: number;
   name?: string;
   durationInMinutes?: number;
