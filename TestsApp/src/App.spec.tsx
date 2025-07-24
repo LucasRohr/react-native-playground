@@ -46,27 +46,26 @@ test('Should disable the button when the checkbox is unchecked', () => {
     // Arrange
     render(<App/>)
 
-    const checkbox = screen.getByRole('checkbox', { name: 'Disable button' })
+    const checkbox = screen.getByRole('checkbox')
     const button = screen.getByTestId('button')
 
     // Act
-    fireEvent.press(checkbox)
+    fireEvent(checkbox, 'onValueChange', false)
 
     // Assert
-    expect(button).toBeDisabled()
-    expect(checkbox).toBeChecked()
+    expect(button.props.accessibilityState.disabled).toBe(true)
+    expect(checkbox).not.toBeChecked()
 })
 
 test('Should enable the button when the checkbox is checked', () => {
     // Arrange
     render(<App/>)  
 
-    const checkbox = screen.getByRole('checkbox', { name: 'Disable button' })
+    const checkbox = screen.getByRole('checkbox')
     const button = screen.getByTestId('button')
 
     // Act
-    fireEvent.press(checkbox)
-    fireEvent.press(checkbox)
+    fireEvent(checkbox, 'onValueChange', true)
 
     // Assert
     expect(button).toBeEnabled()
