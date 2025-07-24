@@ -1,27 +1,30 @@
 import { useMemo, useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
+import { parseColorName } from './utils';
 
 function App() {
-  const [color, setColor] = useState<string>('red')
-  const [toggleCheckBox, setToggleCheckBox] = useState<boolean>(true)
-  
-  const nextColor = useMemo(() => (color === 'red' ? 'blue' : 'red'), [color]);
+  const [color, setColor] = useState<string>('mediumorchid')
+  const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(false)
+
+  const nextColor = useMemo(() => (color === 'mediumorchid' ? 'midnightblue' : 'mediumorchid'), [color]);
+  const nextColorLabel =
+    useMemo(() => (color === 'mediumorchid' ? parseColorName(nextColor, 'midnight') : parseColorName(nextColor, 'medium')), [color, nextColor]);
 
   return (
     <View style={styles.container}>
       <TouchableOpacity
         testID='button'
-        style={[styles.button, { backgroundColor: toggleCheckBox ? color : 'gray' }]}
-        disabled={!toggleCheckBox}
+        style={[styles.button, { backgroundColor: isButtonDisabled ? 'gray' : color }]}
+        disabled={isButtonDisabled}
         onPress={() => setColor(nextColor)}
       >
-        <Text style={styles.buttonText}>Change to {nextColor}</Text>
+        <Text style={styles.buttonText}>Change to {nextColorLabel}</Text>
       </TouchableOpacity>
       <CheckBox
         disabled={false}
-        value={toggleCheckBox}
-        onValueChange={(newValue) => setToggleCheckBox(newValue)}
+        value={isButtonDisabled}
+        onValueChange={(newValue) => setIsButtonDisabled(newValue)}
       />
     </View>
   );
@@ -34,7 +37,6 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   button: {
-    backgroundColor: 'red',
     padding: 10,
     borderRadius: 5,
   },
