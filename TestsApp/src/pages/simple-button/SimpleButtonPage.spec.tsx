@@ -1,9 +1,9 @@
-import App from "./App"
+import SimpleButtonPage from "./SimpleButtonPage"
 import { fireEvent, render, screen } from "@testing-library/react-native"
 
 test('Should render the button correctly', () => {
     // Arrange
-    render(<App />)
+    render(<SimpleButtonPage />)
 
     const buttonText = screen.getByRole('text', { name: 'Change to Midnight Blue' })
 
@@ -13,7 +13,7 @@ test('Should render the button correctly', () => {
 
 test('Should change the color of the button to midnightblue when the button is pressed', () => {
     // Arrange
-    render(<App />)
+    render(<SimpleButtonPage />)
 
     const buttonText = screen.getByRole('text', { name: 'Change to Midnight Blue' })
     const button = screen.getByTestId('button')
@@ -28,7 +28,7 @@ test('Should change the color of the button to midnightblue when the button is p
 
 test('Should change the color of the button to mediumorchid when the button is pressed twice', () => {
     // Arrange
-    render(<App />)
+    render(<SimpleButtonPage />)
 
     const buttonText = screen.getByRole('text', { name: 'Change to Midnight Blue' })
     const button = screen.getByTestId('button')
@@ -44,7 +44,7 @@ test('Should change the color of the button to mediumorchid when the button is p
 
 test('Should disable the button when the checkbox is checked', () => {
     // Arrange
-    render(<App />)
+    render(<SimpleButtonPage />)
 
     const checkbox = screen.getByRole('checkbox')
     const button = screen.getByTestId('button')
@@ -60,7 +60,7 @@ test('Should disable the button when the checkbox is checked', () => {
 
 test('Should enable the button when the checkbox is unchecked', () => {
     // Arrange
-    render(<App />)
+    render(<SimpleButtonPage />)
 
     const checkbox = screen.getByRole('checkbox')
     const button = screen.getByTestId('button')

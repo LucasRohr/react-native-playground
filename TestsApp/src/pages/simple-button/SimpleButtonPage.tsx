@@ -1,9 +1,9 @@
 import { useMemo, useState } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import CheckBox from '@react-native-community/checkbox';
-import { parseColorName } from './utils';
+import { parseColorName } from '../../utils';
 
-function App() {
+function SimpleButtonPage() {
   const [color, setColor] = useState<string>('mediumorchid')
   const [isButtonDisabled, setIsButtonDisabled] = useState<boolean>(false)
 
@@ -47,4 +47,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;
+export default SimpleButtonPage;
